@@ -1,0 +1,116 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+
+
+       
+<form action = "/success" method="POST">
+  <h3 align="center">Car Details</h3>
+ 
+   <label for="brand">Car Brand</label>
+   <select style = "width:175vh" 
+      type="brand"
+      class="form-control"
+      id="brand"
+      name="brand"
+      placeholder="Enter Brand">
+    <option value="BMW" selected="selected"> BMW </option>
+    <option value="None" selected="selected"> select </option>
+    </select>
+    
+  
+   <label for="model">Model</label>
+   <select style = "width:175vh" 
+      type="model"
+      class="form-control"
+      id="model"
+      name="model"
+      placeholder="Enter Model">
+    <option value="S25" selected="selected"> BMW S25 </option>
+    <option value="Other" selected="selected"> Other </option>
+    <option value="None" selected="selected"> select </option>
+    </select>
+  
+   <label for="fuel">Fuel type</label>
+   <select style = "width:175vh" 
+      type="fuel"
+      class="form-control"
+      id="fuel"
+      name="fuel"
+      placeholder="Enter fuel">
+    <option value="Gasoline" selected="selected"> Gasoline </option>
+    <option value="Diesel" selected="selected"> Diesel </option>
+    <option value="Electric" selected="selected"> Electric </option>
+    <option value="CNG" selected="selected"> CNG </option>
+    <option value="LPG" selected="selected"> LPG </option>
+    <option value="Other" selected="selected"> Other </option>
+    <option value="None" selected="selected"> select </option>
+    </select>
+   
+  
+   <label for="gear_type">Gear type</label>
+   <select style = "width:175vh" 
+      type="gear_type"
+      class="form-control"
+      id="gear_type"
+      name="gear_type"
+      placeholder="Enter Geart type">
+    <option value="Manual" selected="selected"> Manual </option>
+    <option value="Automatic" selected="selected"> Automatic </option>
+    <option value="Semi-automatic" selected="selected"> Semi-automatic </option>
+    <option value="None" selected="selected"> select </option>
+    </select>
+   
+
+   <label for="offer_type">Offer type</label>
+   <select style = "width:175vh" 
+      type="offer_type"
+      class="form-control"
+      id="offer_type"
+      name="offer_type"
+      placeholder="Enter Offer type">
+    <option value="Used" selected="selected"> Used </option>
+    <option value="Pre-registered" selected="selected"> Pre-registered </option>
+    <option value="Demonstration" selected="selected"> Demonstration </option>
+    <option value="Employee's car" selected="selected"> Employee's car </option>
+    <option value="New" selected="selected"> New </option>
+    <option value="None" selected="selected"> select </option>
+    </select>  
+    
+  
+  <div class="form-group" >
+    <label for="hp">Horse Power</label>
+    <input
+      type="hp"
+      class="form-control"
+      id="hp"
+      name="hp"
+      placeholder="Enter Horse Power"
+    />
+  </div>
+    <div class="form-group" >
+    <label for="KMs_driven">KMs driven</label>
+    <input
+      type="KMs_driven"
+      class="form-control"
+      id="KMs_driven"
+      name="KMs_driven"
+      placeholder="Enter KMs_driven"
+    />
+  </div>
+  <div class="form-group" >
+    <label for="year">Year</label>
+    <input
+      type="year"
+      class="form-control"
+      id="year"
+      name="year"
+      placeholder="Enter Year"
+    />
+  </div>
+
+  
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

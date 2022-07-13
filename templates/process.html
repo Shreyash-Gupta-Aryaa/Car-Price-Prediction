@@ -1,0 +1,15 @@
+
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Results</h1>
+ 
+<body>    
+<br>
+    
+     
+     {% for your_list_element in your_list %}
+      <p>Expected Car Price is: {{ your_list_element }} </p>
+     {% endfor %}
+     
+</body>
+{% endblock %}
